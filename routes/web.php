@@ -20,7 +20,6 @@ Route::get('/admin-login','AdminController@index');
 Route::get('/dashboard','AdminController@admin_dashboard');
 Route::post('/admin-dashboard','AdminController@dashboard');
 
-
 //users
 Route::get('/logout','UsersController@logout');
 Route::get('/login','UsersController@index');
@@ -59,7 +58,7 @@ Route::post('/addfoto','ilanController@add_foto')->name('addfoto');
 Route::post('/updatefoto','ilanController@update_foto')->name('updatefoto');
 
 
-// Listeleme 
+// Listeleme
 //emlak
 route::get('/arsa','ListeleController@arsa_listele');
 route::get('/daire','ListeleController@daire_listele');
@@ -79,7 +78,7 @@ route::get('/yedek-parça','ListeleController@yedekparca_listele');
 //Özel Ders Verenler ilanları
 route::get('/ozel-ders','ListeleController@ozelders_listele');
 
-// Yorumlar 
+// Yorumlar
 Route::post('/addyorum','YorumController@add_yorum')->name('addyorum');
 
 //iletisim
